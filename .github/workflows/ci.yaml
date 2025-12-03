@@ -20,4 +20,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: techfring/backstage-python-app:${{ github.sha }}
+          tags: techfring/backstage-python-app:${{ github.sha[0:6] }}
