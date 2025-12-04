@@ -39,8 +39,8 @@ jobs:
       - name: Install yq
         shell: bash
         run: |
-          curl -L -f -o /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
-          chmod +x /usr/local/bin/yq
+          sudo curl -L -f -o /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
 
       - name: Modify values file
         shell: bash
